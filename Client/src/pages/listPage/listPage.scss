@@ -1,0 +1,41 @@
+.listPage{
+    display: flex;
+    height:100%;
+    .listContainer{
+        flex: 3;
+        
+        .wrapper{
+            height: 100%;
+            padding-right: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            overflow-y: scroll;
+            padding-bottom: 50px;  
+            
+        }
+    }
+
+    .mapContainer{
+        flex:2;
+        background-color: #fcf5f3;
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px; 
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+        border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: #888; 
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
