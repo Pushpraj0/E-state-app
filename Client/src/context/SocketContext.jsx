@@ -4,12 +4,15 @@ import { AuthContext } from "./AuthContext";
 
 export const SocketContext = createContext();
 
+const isLocalhost = window.location.hostname === "localhost"
+
 export const SocketContextProvider = ({ children }) => {
     const { currentUser } = useContext(AuthContext);
     const [socket, setSocket] = useState(null);
     
     useEffect(() => {
-        setSocket(io("http://localhost:4000"))
+        const socketURL = isLocalhost ? "http://localhost:4000" : "https://e-state-app-1.onrender.com";
+        setSocket(io(socketURL));
     }, []);
 
     useEffect(() => {
