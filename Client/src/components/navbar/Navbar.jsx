@@ -60,8 +60,8 @@ export default function Navbar() {
           <Link href="/">About</Link>
           <Link to={"/list"}>Content</Link>
           <Link href="/">Agents</Link>
-          <Link href="/">Sign in</Link>
-          <Link href="/">Sign up</Link>
+          <Link to="/login">Sign in</Link>
+          <Link to="/register">Sign up</Link>
 
         </div>
      </div> 
