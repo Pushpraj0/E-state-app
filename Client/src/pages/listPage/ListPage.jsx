@@ -28,8 +28,7 @@ export default function ListPage() {
       <div className="mapContainer">
           <Suspense fallback={<p>Loading...</p>}>
             <Await resolve={data.postResponse} errorElement={<p>Error loading posts!</p>}>
-            {(postResponse) => <Map items={postResponse.data} /> 
-            }
+            {(postResponse) => <Map items={postResponse.data} />}
            </Await>
           </Suspense>
       </div>
