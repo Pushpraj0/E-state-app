@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 4000;
 
 const io = new Server({
   cors: {
-    origin: process.env.CLIENT_URL || "http://localhost:5173",
+    origin: [process.env.CLIENT_URL, "http://localhost:5173"],
   },
 });
 
