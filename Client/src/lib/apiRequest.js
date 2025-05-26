@@ -4,7 +4,7 @@ const isLocalhost = window.location.hostname === "localhost";
 const apiRequest = axios.create({
   baseURL: isLocalhost
     ? "http://localhost:8800/api"
-    : "https://e-state-app-oqso.onrender.com",
+    : "https://e-state-app-oqso.onrender.com/api",
   withCredentials: true,
 });
 
