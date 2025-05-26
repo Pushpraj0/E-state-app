@@ -58,7 +58,7 @@ export default function Navbar() {
         <div className={open ? "menu active" : "menu"}>
           <Link href="/">Home</Link>
           <Link href="/">About</Link>
-          <Link href="/">Content</Link>
+          <Link to={"/list"}>Content</Link>
           <Link href="/">Agents</Link>
           <Link href="/">Sign in</Link>
           <Link href="/">Sign up</Link>
