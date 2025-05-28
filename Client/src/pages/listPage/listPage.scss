@@ -1,6 +1,12 @@
+@import "../../responsive.scss";
+
 .listPage{
     display: flex;
     height:100%;
+
+    @include sm {
+    flex-direction: column; 
+    }
     .listContainer{
         flex: 3;
         
